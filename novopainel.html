@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAINEL REP - ALTA PERFORMANCE (Executivo)</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #EEEEEE; 
+        }
+
+        /* Estilo de Botão 3D Customizado (mantido) */
+        .btn-3d {
+            background-color: #005A9C; 
+            box-shadow: 0 4px 0 #004175; 
+            transition: all 0.15s ease-out;
+        }
+        .btn-3d:hover {
+            background-color: #006BCF; 
+            box-shadow: 0 3px 0 #004175;
+            transform: translateY(-1px);
+        }
+        .btn-3d:active {
+            background-color: #006BCF;
+            box-shadow: 0 0 0 #004175;
+            transform: translateY(3px);
+        }
+        
+        .btn-3d-accent {
+            background-color: #FF6600; 
+            box-shadow: 0 4px 0 #CC5200; 
+            transition: all 0.15s ease-out;
+        }
+        .btn-3d-accent:hover {
+            background-color: #ff771a;
+            box-shadow: 0 3px 0 #CC5200;
+            transform: translateY(-1px);
+        }
+        .btn-3d-accent:active {
+            background-color: #ff771a;
+            box-shadow: 0 0 0 #CC5200;
+            transform: translateY(3px);
+        }
+
+        /* Efeitos 3D para o Título "PAINEL REP" (mantido) */
+        .title-3d-primary {
+            text-shadow: 
+                2px 2px 0px rgba(0, 0, 0, 0.1),
+                4px 4px 0px rgba(0, 0, 0, 0.08),
+                6px 6px 0px rgba(0, 0, 0, 0.06),
+                8px 8px 0px rgba(0, 0, 0, 0.04),
+                10px 10px 0px rgba(0, 0, 0, 0.02);
+            color: #00508a; 
+        }
+        
+        /* Efeitos 3D para o Subtítulo "ALTA PERFORMANCE" (mantido) */
+        .title-3d-secondary {
+            text-shadow: 
+                1px 1px 0px rgba(0, 0, 0, 0.08),
+                2px 2px 0px rgba(0, 0, 0, 0.06),
+                3px 3px 0px rgba(0, 0, 0, 0.04);
+            color: #d15500; 
+        }
+    </style>
+</head>
+<!-- Ajuste de padding: p-5 (telas pequenas) e md:p-8 (telas médias e acima) -->
+<body class="flex flex-col items-center min-h-screen p-5 md:p-8">
+
+    <!-- Ajuste de espaçamento e tamanho de fonte para mobile -->
+    <div class="text-center mb-8 md:mb-12">
+        <!-- text-3xl (mobile), sm:text-4xl (mobile maior), md:text-5xl (desktop) -->
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 title-3d-primary">PAINEL REP</h1>
+        <!-- text-lg (mobile), sm:text-xl (mobile maior), md:text-2xl (desktop) -->
+        <span class="text-lg sm:text-xl md:text-2xl font-light text-orange-600 tracking-widest uppercase title-3d-secondary">ALTA PERFORMANCE</span>
+    </div>
+
+    <!-- Layout dos cards: 1 coluna (mobile), 2 colunas (tablet), 4 colunas (desktop) -->
+    <div class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
+        
+        <!-- Card 1: Lista de Preços -->
+        <div class="bg-white rounded-xl shadow-lg flex flex-col justify-between p-5 sm:p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <h2 class="text-lg sm:text-xl font-semibold text-gray-800 mb-4 sm:mb-5 text-center uppercase">
+                <span class="block text-3xl sm:text-4xl mb-2 sm:mb-3">🏷️</span>
+                LISTA DE PREÇOS MANTECORP
+            </h2>
+            <a href="https://altaperformancepro.github.io/LISTAPRECO/" target="_blank" rel="noopener noreferrer" 
+               class="btn-3d text-white font-medium py-3 px-6 rounded-lg w-full text-center text-base sm:text-lg">
+                Acessar Lista
+            </a>
+        </div>
+        
+        <!-- Card 2: Vídeo Rinosoro -->
+        <div class="bg-white rounded-xl shadow-lg flex flex-col justify-between p-5 sm:p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <h2 class="text-lg sm:text-xl font-semibold text-gray-800 mb-4 sm:mb-5 text-center uppercase">
+                <span class="block text-3xl sm:text-4xl mb-2 sm:mb-3">🎥</span>
+                LAVAGEM NASAL RINOSORO
+            </h2>
+            <a href="https://sistemashypera.github.io/videorinosorofinal/" target="_blank" rel="noopener noreferrer" 
+               class="btn-3d-accent text-white font-medium py-3 px-6 rounded-lg w-full text-center text-base sm:text-lg">
+                Ver Vídeo
+            </a>
+        </div>
+        
+        <!-- Card 3: Pedido PDV -->
+        <div class="bg-white rounded-xl shadow-lg flex flex-col justify-between p-5 sm:p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <h2 class="text-lg sm:text-xl font-semibold text-gray-800 mb-4 sm:mb-5 text-center uppercase">
+                <span class="block text-3xl sm:text-4xl mb-2 sm:mb-3">🛒</span>
+                PEDIDO PDV
+            </h2>
+            <a href="https://altaperformancepro.github.io/PEDIDO_MANTECORP/" target="_blank" rel="noopener noreferrer" 
+               class="btn-3d text-white font-medium py-3 px-6 rounded-lg w-full text-center text-base sm:text-lg">
+                Fazer Pedido
+            </a>
+        </div>
+        
+        <!-- Card 4: Simulador Premiação -->
+        <div class="bg-white rounded-xl shadow-lg flex flex-col justify-between p-5 sm:p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <h2 class="text-lg sm:text-xl font-semibold text-gray-800 mb-4 sm:mb-5 text-center uppercase">
+                <span class="block text-3xl sm:text-4xl mb-2 sm:mb-3">🏆</span>
+                SIMULADOR PREMIAÇÃO
+            </h2>
+            <a href="https://altaperformancepro.github.io/simuladorpremiofull/" target="_blank" rel="noopener noreferrer" 
+               class="btn-3d text-white font-medium py-3 px-6 rounded-lg w-full text-center text-base sm:text-lg">
+                Acessar Simulador
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
